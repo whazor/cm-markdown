@@ -5,7 +5,7 @@ import { type Range } from '@codemirror/state';
 export class HiddenWidget extends WidgetType {
   constructor() { super() }
 
-  eq(other: HiddenWidget) { return true }
+  eq(_other: HiddenWidget) { return true }
 
   toDOM() {
     let wrap = document.createElement("span")

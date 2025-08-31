@@ -1,12 +1,12 @@
 import { Decoration, WidgetType } from '@codemirror/view';
-import { HiddenWidget, MarkdownDecoration } from './base';
+import { MarkdownDecoration } from './base';
 import { type Range } from '@codemirror/state';
 import { tags } from '@lezer/highlight';
 
 class BlockquoteWidget extends WidgetType {
   constructor() { super() }
 
-  eq(other: BlockquoteWidget) { return true }
+  eq(_other: BlockquoteWidget) { return true }
 
   toDOM() {
     let wrap = document.createElement("span")
@@ -33,7 +33,7 @@ export class Blockquote extends MarkdownDecoration {
   };
   nodeName = "Blockquote"
 
-  getDecorations(from: number, to: number, text: string) {
+  getDecorations(from: number, _to: number, text: string) {
     let widgets: Range<Decoration>[] = []
     
     // Find all '> ' patterns in the text

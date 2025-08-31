@@ -12,7 +12,7 @@ export class InlineCode extends MarkdownDecoration {
     fontSize: "0.9em"
   }
 
-  getDecorations(from: number, to: number, text: string) {
+  getDecorations(from: number, to: number, _text: string) {
     let widgets: Range<Decoration>[] = []
     
     // Create decoration for opening backtick
