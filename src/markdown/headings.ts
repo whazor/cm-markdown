@@ -67,7 +67,7 @@ export class HeadingDecoration extends MarkdownDecoration {
 
   style: TagStyle
 
-  getDecorations(from: number, to: number) {
+  getDecorations(from: number, _to: number) {
     let widgets: Range<Decoration>[] = []
     // Create decoration for opening *
     let openingDeco = Decoration.replace({

@@ -67,7 +67,7 @@ export class ListItem extends MarkdownDecoration {
   };
   nodeName = "ListItem"
 
-  getDecorations(from: number, to: number, text: string) {
+  getDecorations(from: number, _to: number, text: string) {
     let widgets: Range<Decoration>[] = []
     
     // Find all '- ' patterns in the text

@@ -1,7 +1,6 @@
-import { Decoration, EditorView, ViewPlugin, ViewUpdate, WidgetType, type DecorationSet } from '@codemirror/view';
+import { Decoration, EditorView, ViewPlugin, ViewUpdate, type DecorationSet } from '@codemirror/view';
 import { type Range } from '@codemirror/state';
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
-import { languages } from '@codemirror/language-data';
 import { HighlightStyle, LanguageDescription, LanguageSupport, syntaxHighlighting, syntaxTree, TagStyle } from '@codemirror/language';
 import { tags } from '@lezer/highlight';
 import { StrongEmphasis } from './markdown/bold';
@@ -15,8 +14,7 @@ import { CodeBlock } from './markdown/code-block';
 
 
 
-import { javascript, javascriptLanguage } from '@codemirror/lang-javascript';
-import {parser as javascriptParser} from "@lezer/javascript"
+import { javascriptLanguage } from '@codemirror/lang-javascript';
 
 // Custom highlight style for markdown
 
