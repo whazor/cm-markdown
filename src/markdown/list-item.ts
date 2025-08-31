@@ -4,8 +4,10 @@ import { type Range } from '@codemirror/state';
 import { tags } from '@lezer/highlight';
 
 class ListItemWidget extends WidgetType {
-  constructor(private level: number = 0) { 
-    super() 
+  level: number
+  constructor(level: number = 0) { 
+    super()
+    this.level = level
   }
 
   eq(other: ListItemWidget) { 

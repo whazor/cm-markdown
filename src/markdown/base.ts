@@ -1,5 +1,5 @@
 import { Decoration, WidgetType } from "@codemirror/view"
-import { TagStyle } from "@codemirror/language"
+import { type TagStyle } from "@codemirror/language"
 import { type Range } from '@codemirror/state';
 
 export class HiddenWidget extends WidgetType {
