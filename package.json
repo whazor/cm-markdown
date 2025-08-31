@@ -9,6 +9,7 @@
     "dev": "pnpm --filter example dev",
     "build:all": "pnpm --recursive build",
     "dev:all": "pnpm --recursive --parallel dev",
+    "typecheck": "pnpm -r exec tsc -p tsconfig.json --noEmit",
     "clean": "pnpm --recursive exec rm -rf dist node_modules"
   },
   "keywords": [
