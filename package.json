@@ -1,0 +1,29 @@
+{
+  "name": "cm-markdown-workspace",
+  "version": "1.0.0",
+  "description": "A CodeMirror plugin for enhanced markdown editing with hidden markdown syntax characters",
+  "private": true,
+  "packageManager": "pnpm@10.12.4",
+  "scripts": {
+    "build": "pnpm --filter cm-markdown build",
+    "dev": "pnpm --filter example dev",
+    "build:all": "pnpm --recursive build",
+    "dev:all": "pnpm --recursive --parallel dev",
+    "clean": "pnpm --recursive exec rm -rf dist node_modules"
+  },
+  "keywords": [
+    "codemirror",
+    "markdown",
+    "plugin",
+    "editor",
+    "syntax",
+    "hidden",
+    "workspace"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
