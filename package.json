@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A CodeMirror plugin for enhanced markdown editing with hidden markdown syntax characters",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@10.12.4",
   "scripts": {
-    "build": "pnpm --filter cm-markdown build",
+    "build": "tsc -p src/tsconfig.build.json",
     "dev": "pnpm --filter example dev",
     "build:all": "pnpm --recursive build",
     "dev:all": "pnpm --recursive --parallel dev",
