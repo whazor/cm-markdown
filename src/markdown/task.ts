@@ -3,8 +3,10 @@ import { MarkdownDecoration } from "./base";
 import { type Range } from "@codemirror/state";
 
 class TaskMarkerWidget extends WidgetType {
-  constructor(public check: boolean) {
+  check: boolean;
+  constructor(check: boolean) {
     super();
+    this.check = check;
   }
   eq(other: TaskMarkerWidget) {
     return this.check === other.check;
