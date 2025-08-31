@@ -1,7 +1,7 @@
 import { Decoration, EditorView, ViewPlugin, ViewUpdate, type DecorationSet } from '@codemirror/view';
 import { type Range } from '@codemirror/state';
 import { markdown, markdownLanguage } from '@codemirror/lang-markdown';
-import { HighlightStyle, LanguageDescription, LanguageSupport, syntaxHighlighting, syntaxTree, TagStyle } from '@codemirror/language';
+import { HighlightStyle, LanguageDescription, LanguageSupport, syntaxHighlighting, syntaxTree, type TagStyle } from '@codemirror/language';
 import { tags } from '@lezer/highlight';
 import { StrongEmphasis } from './markdown/bold';
 import { LinkDecoration } from './markdown/link';

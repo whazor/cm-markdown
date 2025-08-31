@@ -3,7 +3,7 @@ import { HiddenWidget, MarkdownDecoration } from './base';
 import { type Range } from '@codemirror/state';
 
 import { tags } from '@lezer/highlight';
-import { TagStyle } from '@codemirror/language';
+import { type TagStyle } from '@codemirror/language';
 
 export class HeadingDecoration extends MarkdownDecoration {
   constructor(level: 1|2|3|4|5|6) {
