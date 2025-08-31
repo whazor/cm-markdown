@@ -69,40 +69,34 @@ importers:
 
   src:
     dependencies:
+      '@codemirror/lang-javascript':
+        specifier: ^6.0.0
+        version: 6.2.4
       '@codemirror/lang-markdown':
-        specifier: ^6.2.0
+        specifier: ^6.0.0
         version: 6.3.3
       '@codemirror/language':
-        specifier: ^6.10.0
+        specifier: ^6.0.0
         version: 6.11.2
       '@codemirror/language-data':
-        specifier: ^6.3.0
+        specifier: ^6.0.0
         version: 6.5.1
       '@codemirror/state':
-        specifier: ^6.4.0
+        specifier: ^6.0.0
         version: 6.5.2
       '@codemirror/view':
-        specifier: ^6.24.0
+        specifier: ^6.0.0
         version: 6.38.1
       '@lezer/highlight':
         specifier: ^1.2.0
         version: 1.2.1
     devDependencies:
-      '@codemirror/lang-javascript':
-        specifier: ^6.2.4
-        version: 6.2.4
-      '@lezer/javascript':
-        specifier: ^1.5.1
-        version: 1.5.1
       '@types/node':
         specifier: ^20.0.0
         version: 20.19.9
       typescript:
         specifier: ^5.0.0
         version: 5.8.3
-      vite:
-        specifier: ^7.0.5
-        version: 7.0.5(@types/node@20.19.9)
 
 packages:
 
